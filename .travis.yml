@@ -13,13 +13,13 @@ script:
 
 notifications:
   email:
-    # on_start: always
+    on_start: always
     on_success: always
     on_failure: always
     recipients:
       - ptdorf@gmail.com
   slack:
-    # on_start: always
+    on_start: always
     on_success: always
     on_failure: always
     rooms:
