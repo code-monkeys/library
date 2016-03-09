@@ -5,7 +5,7 @@ Skeleton PHP library.
 
 ## Build Status
 
-[![Travis Status](https://api.travis-ci.org/dotser/my-library.svg?branch=master)](https://travis-ci.org/dotser/my-library)
+[![Travis Status](https://api.travis-ci.org/dotser/library.svg?branch=master)](https://travis-ci.org/dotser/library)
 
 
 ## Useful features
