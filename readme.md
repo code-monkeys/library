@@ -1,8 +1,8 @@
-# My Libraryrary)
+# My Library
 
 Skeleton PHP library.
 
-[![Travis Status](https://api.travis-ci.org/dotser/library.svg?branch=master)](https://travis-ci.org/dotser/lib
+[![Travis Status](https://api.travis-ci.org/dotser/library.svg?branch=master)](https://travis-ci.org/dotser/library)
 
 
 
