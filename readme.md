@@ -6,10 +6,19 @@ Skeleton PHP library.
 
 
 
-## Useful features
+## Ant tasks
 
 ```
-ant test    # Runs the test suite
-ant docs    # Generates and opens the docs
-ant lint    # Lints all code under src/ and test/
+$ ant -p
+
+Main build file
+Main targets:
+
+ clean   Clean generated files.
+ docs    Generates the documentation.
+ help    Show available commands
+ lint    Lints PHP files.
+ test    Run PHP unit tests.
+ vendor  Install dependencies.
+Default target: help
 ```
