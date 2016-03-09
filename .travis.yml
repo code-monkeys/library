@@ -1,9 +1,10 @@
 language: php
 
 php:
-- 5.4
-- 5.5
-- 5.6
+- '5.4'
+- '5.6'
+- '7.0'
+- hhvm
 
 before_script:
 - ant vendor
@@ -23,4 +24,4 @@ notifications:
     on_success: always
     on_failure: always
     rooms:
-      - secure: MEaqH+8tKzGuwnusN/iOGamBq9ovdrib5Ds/fh7lqnxNEosEYNFRm0wWTjEGevqyVH5yt4tN9wGmWppTJOjmJDRIoolB4yY6jqZ/yOLm/214TcmdHYpPq78UoHz/BgdfQXmoPwzEam0kxZOU4R5GvyY59Up8WX/00E3e1m3yirFx2tsWnzofhVy0UIYhNXbS+D7htMKweMLcz/tgUOfktRM2qcqNUqjCPnSyDyxHRsVkzmMcd5BQrgULKRkP0bAUXzKhL1NFdcBf8rP7Oo/6/NtxpqXgNNbf7xjdPgP+Q+Av8XUiYL26HTdxHN37uhoZNHo7t50rYcMQG8FQ5e+aMyRIu0KDo+uwh9bIRSK4wZAEGFzpy+ftxblHbq7Gq/szSqvpY/1ZErwMv7eR9A46BzlryN+Azla+jL9Z7R6/yF/ypZSsMp3DUCFAbdAcnl4vr5jJQW1buZSe4XhVMeqpbKG762ZbGsCQNFSjoEKD+bM6ck6hHP7sAGTUuI4qAzKOwGvFoORmyjUGppmXm6Y8Zjz8M+ow7y742yy8zGT+6ss/hvZhFSgVZDNNECseGU7g9b91tCSDrOYBwCyzMvopeyCc6jYvfNSA8oHjYwqhj2epE/jebgiBZMGeY0iau2+Ckpmhq45dpvdm1ugZe8rBpp2sXICrDAXPV+slkDJHw/8=
+      - secure: "MEaqH+8tKzGuwnusN/iOGamBq9ovdrib5Ds/fh7lqnxNEosEYNFRm0wWTjEGevqyVH5yt4tN9wGmWppTJOjmJDRIoolB4yY6jqZ/yOLm/214TcmdHYpPq78UoHz/BgdfQXmoPwzEam0kxZOU4R5GvyY59Up8WX/00E3e1m3yirFx2tsWnzofhVy0UIYhNXbS+D7htMKweMLcz/tgUOfktRM2qcqNUqjCPnSyDyxHRsVkzmMcd5BQrgULKRkP0bAUXzKhL1NFdcBf8rP7Oo/6/NtxpqXgNNbf7xjdPgP+Q+Av8XUiYL26HTdxHN37uhoZNHo7t50rYcMQG8FQ5e+aMyRIu0KDo+uwh9bIRSK4wZAEGFzpy+ftxblHbq7Gq/szSqvpY/1ZErwMv7eR9A46BzlryN+Azla+jL9Z7R6/yF/ypZSsMp3DUCFAbdAcnl4vr5jJQW1buZSe4XhVMeqpbKG762ZbGsCQNFSjoEKD+bM6ck6hHP7sAGTUuI4qAzKOwGvFoORmyjUGppmXm6Y8Zjz8M+ow7y742yy8zGT+6ss/hvZhFSgVZDNNECseGU7g9b91tCSDrOYBwCyzMvopeyCc6jYvfNSA8oHjYwqhj2epE/jebgiBZMGeY0iau2+Ckpmhq45dpvdm1ugZe8rBpp2sXICrDAXPV+slkDJHw/8="
