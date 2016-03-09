@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="My Library" default="help" basedir=".">
+  <description>Main build file</description>
+
+  <target name="help" description="Show available commands" >
+    <exec executable="ant" dir="." failonerror="true">
+      <arg value="-p"/>
+    </exec>
+  </target>
+
+  <target name="test" description="Run PHP unit tests.">
+    <exec executable="./vendor/bin/phpunit"
+      failonerror="true">
+    </exec>
+  </target>
+
+  <target name="lint" description="Lints PHP files." >
+    <apply executable="php" failonerror="true">
+      <arg value="-l" />
+      <fileset dir="." includes="src/**/*.php" />
+      <fileset dir="." includes="test/**/*.php" />
+    </apply>
+  </target>
+
+  <target name="vendor" description="Install dependencies.">
+    <exec executable="composer" failonerror="true">
+      <arg value="install"/>
+      <arg value="--no-interaction"/>
+    </exec>
+  </target>
+
+  <target name="docs" description="Generates the documentation.">
+    <exec executable="./vendor/bin/phpdoc"
+      failonerror="true" />
+  </target>
+
+  <target name="clean" description="Clean generated files.">
+    <delete dir="build" failonerror="true" />
+  </target>
+
+</project>

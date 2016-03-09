@@ -1,0 +1,16 @@
+{
+  "name"                            : "company/library",
+  "version"                         : "1.0.0",
+  "minimum-stability"               : "dev",
+  "require": {
+  },
+  "require-dev": {
+    "phpunit/phpunit"               : "*",
+    "phpdocumentor/phpdocumentor"   : "2.*"
+  },
+  "autoload": {
+    "psr-0": {
+      "Company\\": "src/"
+    }
+  }
+}
