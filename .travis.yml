@@ -6,7 +6,7 @@ language: php
 # - hhvm
 
 before_script:
-- ant vendor
+- composer install
 
 # script:
 # - ant test
