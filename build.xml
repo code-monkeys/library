@@ -1,6 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<project name="My Library" default="help" basedir=".">
-  <description>Main build file</description>
+<project name="Library" default="help" basedir=".">
+
+  <property name="properties.file" value="build.properties"/>
+  <!--
+  <fail message="${properties.file} does not exist.">
+    <condition>
+      <not><available file="${properties.file}"/></not>
+    </condition>
+  </fail>
+  -->
+  <property file="${properties.file}"/>
 
   <target name="help" description="Show available commands" >
     <exec executable="ant" dir="." failonerror="true">
@@ -8,34 +17,14 @@
     </exec>
   </target>
 
-  <target name="test" description="Run PHP unit tests.">
-    <exec executable="./vendor/bin/phpunit"
-      failonerror="true">
-    </exec>
+  <target name="clean" description="Remove all build directories" >
+    <delete includeEmptyDirs="true">
+      <fileset dir="build"/>
+    </delete>
   </target>
 
-  <target name="lint" description="Lints PHP files." >
-    <apply executable="php" failonerror="true">
-      <arg value="-l" />
-      <fileset dir="." includes="src/**/*.php" />
-      <fileset dir="." includes="test/**/*.php" />
-    </apply>
-  </target>
-
-  <target name="vendor" description="Install dependencies.">
-    <exec executable="composer" failonerror="true">
-      <arg value="install"/>
-      <arg value="--no-interaction"/>
-    </exec>
-  </target>
-
-  <target name="docs" description="Generates the documentation.">
-    <exec executable="./vendor/bin/phpdoc"
-      failonerror="true" />
-  </target>
-
-  <target name="clean" description="Clean generated files.">
-    <delete dir="build" failonerror="true" />
-  </target>
+  <import file="util/ant/php.xml"/>
+  <import file="util/ant/api.xml"/>
+  <import file="util/ant/docs.xml"/>
 
 </project>

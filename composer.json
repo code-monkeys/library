@@ -3,6 +3,7 @@
   "version"                         : "1.0.0",
   "minimum-stability"               : "dev",
   "require": {
+    "satooshi/php-coveralls": "^1.0"
   },
   "require-dev": {
     "phpunit/phpunit"               : "*",

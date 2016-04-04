@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project>
+
+  <target name="api"
+    description="Compiles and shows the documentation."
+    depends="api:compile,api:show">
+  </target>
+
+  <target name="api:compile"
+    description="Generates the internal API documentation.">
+    <exec executable="apigen" failonerror="true">
+      <arg value="generate"/>
+      <arg value="--source"/>
+      <arg value="src"/>
+      <arg value="--destination"/>
+      <arg value="build/api"/>
+    </exec>
+  </target>
+
+  <target name="api:show"
+    description="Browses the internal API documentation.">
+    <exec executable="open" failonerror="true">
+      <arg value="http://localhost:7001/"/>
+    </exec>
+    <exec executable="php" dir="build/api" failonerror="true">
+      <arg value="-S"/>
+      <arg value="localhost:7001"/>
+    </exec>
+  </target>
+
+</project>

@@ -1,0 +1,8 @@
+parameters:
+  tasks:
+    phpcs:
+      ignore_patterns:
+        - test/*
+      standard: "./phpcs.xml"
+    phpspec: ~
+    phpunit: ~
