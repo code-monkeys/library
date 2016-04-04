@@ -1,9 +1,9 @@
 language: php
 
-php:
-- '5.4'
-- '7.0'
-- hhvm
+# php:
+# - '5.4'
+# - '7.0'
+# - hhvm
 
 # before_script:
 # - ant vendor
