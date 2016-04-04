@@ -5,8 +5,8 @@ language: php
 # - '7.0'
 # - hhvm
 
-# before_script:
-# - ant vendor
+before_script:
+- ant vendor
 
 # script:
 # - ant test
