@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<project name="dotser/library" default="help" basedir=".">
+<project name="dotser/library" basedir=".">
 
   <property file="build.properties"/>
 
