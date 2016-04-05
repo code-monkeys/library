@@ -2,10 +2,8 @@
   "name"                            : "company/library",
   "version"                         : "1.0.0",
   "minimum-stability"               : "dev",
-  "require": {
-    "satooshi/php-coveralls": "^1.0"
-  },
   "require-dev": {
+    "satooshi/php-coveralls"        : "^1.0",
     "phpunit/phpunit"               : "*",
     "phpdocumentor/phpdocumentor"   : "2.*"
   },
