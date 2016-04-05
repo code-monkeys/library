@@ -1,8 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project name="dotser/library" basedir=".">
 
-  <property file="build.properties"/>
-
   <target name="clean" description="Remove all build directories" >
     <delete includeEmptyDirs="true">
       <fileset dir="build"/>
