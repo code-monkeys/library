@@ -6,7 +6,7 @@ Skeleton PHP library.
 [![Codeship Status](https://codeship.com/projects/d898dc60-c836-0133-73c1-621ee4640c7c/status?branch=master)](https://codeship.com/projects/139249)
 
 
-## Ant tasks
+### Ant tasks
 
 ```
 $ ant -p
@@ -28,3 +28,7 @@ Main targets:
  php:test      Run PHP tests.
  php:update    Updates PHP dependencies.
  ```
+
+### Packagist
+
+https://packagist.org/packages/dotser/library
