@@ -1,0 +1,11 @@
+#!/usr/bin/env php
+<?php
+require "vendor/autoload.php";
+
+use dotser\library\Greeter;
+
+$prog = array_shift($GLOBALS["argv"]);
+$name = array_shift($GLOBALS["argv"]);
+
+$greeter = new Greeter($name);
+echo $greeter->greet() . PHP_EOL;

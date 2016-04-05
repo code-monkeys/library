@@ -7,6 +7,9 @@
     "phpunit/phpunit"               : "*",
     "phpdocumentor/phpdocumentor"   : "2.*"
   },
+  "bin": [
+    "bin/greet"
+  ],
   "autoload": {
     "psr-0": {
       "dotser\\": "src/"
