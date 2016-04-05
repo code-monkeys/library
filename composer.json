@@ -1,5 +1,5 @@
 {
-  "name"                            : "company/library",
+  "name"                            : "dotser/library",
   "version"                         : "1.0.0",
   "minimum-stability"               : "dev",
   "require-dev": {
@@ -9,7 +9,7 @@
   },
   "autoload": {
     "psr-0": {
-      "Company\\": "src/"
+      "dotser\\": "src/"
     }
   }
 }

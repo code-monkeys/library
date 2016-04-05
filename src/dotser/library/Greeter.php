@@ -1,5 +1,5 @@
 <?php
-namespace Company\Library;
+namespace dotser\library;
 
 /**
  * Amazeballs!

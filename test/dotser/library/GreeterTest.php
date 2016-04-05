@@ -1,5 +1,5 @@
 <?php
-namespace Company\Library;
+namespace dotser\library;
 
 
 class GreeterTest extends \PHPUnit_Framework_TestCase
@@ -15,7 +15,7 @@ class GreeterTest extends \PHPUnit_Framework_TestCase
 
     public function testInstanceOf()
     {
-        $this->assertInstanceOf("Company\Library\Greeter", $this->object);
+        $this->assertInstanceOf("dotser\library\Greeter", $this->object);
     }
 
     public function testGreet()
