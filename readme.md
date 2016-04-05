@@ -4,10 +4,6 @@ Skeleton PHP library.
 
 [![Travis Status](https://api.travis-ci.org/dotser/library.svg?branch=master)](https://travis-ci.org/dotser/library)
 [![Codeship Status](https://codeship.com/projects/d898dc60-c836-0133-73c1-621ee4640c7c/status?branch=master)](https://codeship.com/projects/139249)
-
-
-### Badges
-
 [![Latest Stable Version](https://poser.pugx.org/dotser/library/v/stable)](https://packagist.org/packages/dotser/library)
 [![Total Downloads](https://poser.pugx.org/dotser/library/downloads)](https://packagist.org/packages/dotser/library)
 [![Latest Unstable Version](https://poser.pugx.org/dotser/library/v/unstable)](https://packagist.org/packages/dotser/library)
